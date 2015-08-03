@@ -107,8 +107,8 @@ extension UIImage {
             // build a context that's the same dimensions as the new size
             var bitmap:CGContextRef = CGBitmapContextCreate(
                 nil,
-                UInt(newRect.size.width),
-                UInt(newRect.size.height),
+                Int(newRect.size.width),
+                Int(newRect.size.height),
                 CGImageGetBitsPerComponent(imageRef),
                 0,
                 CGImageGetColorSpace(imageRef),
